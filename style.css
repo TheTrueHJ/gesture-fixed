@@ -1,0 +1,13 @@
+#snapshot, #webcam{
+    border-width: 5px;
+    border-style: dashed;
+    width: 480px;
+    height:360px;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    margin: 0;
+}

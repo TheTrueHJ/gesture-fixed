@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Finger Gestures </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+    <body>
+        <h1 class="btn btn-warning header"> Finger Gestures </h1>
+        <div class="container">
+        <center>
+        <div id = "webcam_stuff" class = "col-md-4 col-sm-12 col-xs-12">
+        <h2> Webcam </h2>
+        <br>
+        <div id = "webcam"></div>
+        <br>
+        <button class="btn btn-primary" onclick = "snap();">Take snapshot</button>
+        </div>
+
+        <div id = "predictions" class = "col-md-4 col-sm-12 col-xs-12">
+            <h3> Result 1 </h3>
+            <br><h4 id = "Result1" class = "btn btn-info"> N/A</h4>
+            <br><br>
+            <h3> Result 2 </h3>
+            <br><h4 id = "Result2" class = "btn btn-info"> N/A</h4>
+        </div>
+        
+        <div id="snapshot_stuff" class = "col-md-4 col-sm-12 col-xs-12">
+        <h2>Result</h2>
+        <br>
+        <div id = "snapshot"></div>
+        <br>
+        <button class="btn btn-primary" onclick="identify();"> Identify </button>
+        </div>
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
